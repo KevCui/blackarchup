@@ -10,6 +10,7 @@
   - [Easy configuration](#easy-configuration)
   - [Easy modularization](#easy-modularization)
   - [Easy customization](#easy-customization)
+- [What? You're a Kali Linux user?](#what-youre-a-kali-linux-user)
 
 ## Features
 
@@ -90,3 +91,11 @@ $ ./blackarchup.sh pacman pip go
 - Need a new global variable for your script? Add it in `globalvar.yaml`
 
 - Already have your own setup script? Feel free to hook up by copying it to `script/` folder, run it `./blackarchup.sh <your_script_name>`
+
+## What? You're a Kali Linux user?
+
+You may like to check out another similar project for Kali Linux: [kaliup](https://github.com/KevCui/kaliup).
+
+---
+
+<a href="https://www.buymeacoffee.com/kevcui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="60px" width="217px"></a>
