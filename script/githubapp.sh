@@ -11,7 +11,7 @@ install_app_from_github() {
         if [[ "$2" == *"raw.githubusercontent.com"* ]]; then
             link="$2"
         else
-            latest=$(curl -sS "${2}/latest" | sed -E 's/.*href=\"//;s/\">.*//')
+            latest=$(curl -sS -I "${2}/latest" | grep 'locations:' | awk '{print $2}' | sed -E 's/\/tag\//\/expanded_assets\//')
             link="https://github.com$(curl -sS "$latest" | grep href | grep "$3" | head -1 | sed -E 's/.*href=\"//;s/\" rel=.*//')"
         fi
         app="${DOWNLOAD_DIR}/${1}${4}"
